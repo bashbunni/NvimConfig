@@ -1,6 +1,5 @@
 syntax on
 
-
 set mouse=a
 set cursorline
 set tabstop=4
@@ -24,14 +23,11 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 "C/C++ dev plugins
 Plug 'ycm-core/YouCompleteMe'
 
-
 "Syntax plugin
 Plug 'vim-syntastic/syntastic'
 
-
-"General plugins
-
-
+"Autocomplete plugin
+Plug 'neoclide/coc.nvim'
 
 "Nav plugins
 Plug 'jistr/vim-nerdtree-tabs'
@@ -39,7 +35,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'preservim/NERDTree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'ctrlpvim/ctrlp.vim.git'
 
 "Comment Plugin
 Plug 'preservim/nerdcommenter'
@@ -52,8 +48,8 @@ Plug 'tmhedberg/SimpylFold'
 
 call plug#end()
 
+"Aesthetic? Maybe
 colorscheme dracula
-
 
 "Definitions
 "<leader>d: go to definition
@@ -103,6 +99,8 @@ let NERDTreeShowLineNumbers=1
 let $FZF_DEFAULT_OPTS='--reverse'
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 
+"Enable smarter tab line
+let g:airline#extensions#tabline#enabled = 1
 
 " Focus and redistribute split windows
 noremap ff :resize 100 <CR> <BAR> :vertical resize 220<CR>
