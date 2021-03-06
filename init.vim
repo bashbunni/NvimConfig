@@ -23,6 +23,9 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 "Syntax plugin
 Plug 'vim-syntastic/syntastic'
 
+"Markdown preview
+Plug 'iamcco/markdown-preview.nvim'
+
 "Autocomplete plugin
 "Also do :CocInstall coc-clangd coc-tsserver coc-eslint coc-json coc-prettier coc-css coc-python 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
